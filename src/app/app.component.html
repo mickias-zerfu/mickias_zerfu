@@ -1,4 +1,26 @@
-<button pButton type="button" class="bg-red-500 text-white px-4 py-2 rounded">
-  PrimeNG Button
-</button>
-<app-my-threejs-component></app-my-threejs-component>
+<div class="flex flex-col h-screen" [ngClass]="{'dark-mode': darkMode, 'light-mode': !darkMode}">
+  <!-- Rest of your HTML code -->
+  <div class="flex">
+    <div>
+      <app-header></app-header>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="flex-grow">
+      <div [ngClass]="{'darks': darkMode, 'lights': !darkMode}">
+        <p-dialog class="bg-primary" [ngClass]="{'dark-mode': darkMode, 'light-mode': !darkMode}">
+          <h1>Hello world</h1>
+        </p-dialog>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  <app-footer class="mt-auto"></app-footer>
+
+  <button pButton type="button" icon="pi pi-user"
+    class="fixed right-4 bottom-16 shadow-lg rounded-full h-12 w-12 flex items-center justify-center"
+    [ngClass]="{'dark': darkMode, 'light': !darkMode}" (click)="toggleMode()">
+    <i *ngIf="!darkMode" class="pi pi-moon pi-fill" style="font-size: 1rem; color: #f4f5f8;"></i>
+    <i *ngIf="darkMode" class="pi pi-sun" style="font-size: 1rem; color: #e96b27;"></i>
+  </button>
+</div>

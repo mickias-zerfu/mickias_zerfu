@@ -1,6 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--primary: #203E4A;
+	--primary-rgb: 32,62,74;
+	--primary-contrast: #ffffff;
+	--primary-contrast-rgb: 255,255,255;
+	--primary-shade: #1c3741;
+	--primary-tint: #36515c;
+
+	--secondary: #B95118;
+	--secondary-rgb: 185,81,24;
+	--secondary-contrast: #ffffff;
+	--secondary-contrast-rgb: 255,255,255;
+	--secondary-shade: #a34715;
+	--secondary-tint: #c0622f;
+
+	--tertiary: #4D2929;
+	--tertiary-rgb: 77,41,41;
+	--tertiary-contrast: #ffffff;
+	--tertiary-contrast-rgb: 255,255,255;
+	--tertiary-shade: #442424;
+	--tertiary-tint: #5f3e3e;
+
+	--success: #738678 ;
+	--success-rgb: 115,134,120;
+	--success-contrast: #000000;
+	--success-contrast-rgb: 0,0,0;
+	--success-shade: #65766a;
+	--success-tint: #819286;
+
+	--warning: #ffc409;
+	--warning-rgb: 255,196,9;
+	--warning-contrast: #000000;
+	--warning-contrast-rgb: 0,0,0;
+	--warning-shade: #e0ac08;
+	--warning-tint: #ffca22;
+
+	--danger: #B3809D;
+	--danger-rgb: 179,128,157;
+	--danger-contrast: #000000;
+	--danger-contrast-rgb: 0,0,0;
+	--danger-shade: #9e718a;
+	--danger-tint: #bb8da7;
+
+	--light: #f4f5f8;
+	--light-rgb: 244,245,248;
+	--light-contrast: #000000;
+	--light-contrast-rgb: 0,0,0;
+	--light-shade: #d7d8da;
+	--light-tint: #f5f6f9;
+
+	--medium: #7C83BC ;
+	--medium-rgb: 124,131,188;
+	--medium-contrast: #000000;
+	--medium-contrast-rgb: 0,0,0;
+	--medium-shade: #6d73a5;
+	--medium-tint: #898fc3;
+
+	--dark: #003153;
+	--dark-rgb: 0,49,83;
+	--dark-contrast: #ffffff;
+	--dark-contrast-rgb: 255,255,255;
+	--dark-shade: #002b49;
+	--dark-tint: #1a4664;
+
+}
+.dark-mode {
+  background-color: var(--dark);
+  color: var(--dark-contrast);
+}
+
+.light-mode {
+  color: var(--primary);
+  background-color: var(--primary-contrast);
+}
